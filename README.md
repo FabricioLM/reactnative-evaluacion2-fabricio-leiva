@@ -108,18 +108,10 @@ En esta evaluación el trabajo fue realizado de forma **individual**:
 
 ## 🤖 Uso de Inteligencia Artificial
 
-Se utilizó **IA (ChatGPT)** como apoyo en:
+El uso de Inteligencia Artificial (ChatGPT) en esta evaluación se limitó exclusivamente a la **creación y redacción del archivo README.md**, con el fin de presentar la documentación de manera clara, ordenada y profesional.
 
-- Propuesta inicial de estructura del proyecto.
-- Ejemplos de código para:
-  - Uso de **Expo Router**.
-  - Manejo de contexto con **AuthContext**.
-  - Ejemplos de integración de **AsyncStorage**.
-  - Uso de **expo-image-picker** y **expo-location**.
-- Guía para mantener buenas prácticas de TypeScript y organización de archivos.
-- Redacción del presente **README**.
+Todo el código de la aplicación —incluyendo el login, navegación, manejo de tareas, integración de fotos, ubicación, almacenamiento local y pruebas en dispositivo físico— fue desarrollado, revisado y probado manualmente por el estudiante.
 
-Todo el código fue revisado, adaptado y probado manualmente por el estudiante antes de la entrega.
 
 ---
 
