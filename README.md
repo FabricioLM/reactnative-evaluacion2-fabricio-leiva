@@ -1,3 +1,9 @@
+# 🟣 VIDEO DEMOSTRATIVO (GOOGLE DRIVE)
+📌 Link del video:  
+👉 https://drive.google.com/drive/folders/1lNbN2SH72LdO3lS3BNX8577cyscYWaCM?usp=sharing
+
+---
+
 # Evaluación 2 – React Native con Expo (TODO List)
 
 **Estudiante:** Fabricio Leiva  
@@ -121,9 +127,9 @@ Todo el código fue revisado, adaptado y probado manualmente por el estudiante a
 
 El video (máx. 2 minutos) muestra:
 
-1. Inicio de sesión con contraseña incorrecta → mensaje de error.
-2. Inicio de sesión correcto con contraseña `1234`.
-3. Navegación a la tab **TODO List**.
+1. Inicio de sesión con contraseña incorrecta → mensaje de error.  
+2. Inicio de sesión correcto con contraseña `1234`.  
+3. Navegación a la tab **TODO List**.  
 4. Creación de una tarea:
    - Escribir título.
    - Seleccionar foto.
@@ -135,7 +141,7 @@ El video (máx. 2 minutos) muestra:
 8. Navegación a **Perfil**, mostrando el email del usuario.
 
 👉 Enlace al video:  
-`[Reemplazar por enlace real de Loom / YouTube / Drive]`
+https://drive.google.com/drive/folders/1lNbN2SH72LdO3lS3BNX8577cyscYWaCM?usp=sharing
 
 ---
 
