@@ -1,7 +1,7 @@
 # 🟣 VIDEO DEMOSTRATIVO (GOOGLE DRIVE)
 
 📌 **Link del video:**
-👉 https://drive.google.com/drive/folders/1lNbN2SH72LdO3lS3BNX8577cyscYWaCM?usp=sharing
+👉 https://drive.google.com/file/d/1HXZBbt4FT7m5H19oqVVRVG3GcOPr-BIV/view?usp=sharing
 
 ---
 
@@ -100,7 +100,7 @@ Todo el código fue desarrollado y probado manualmente.
 
 ## ▶️ Video demostrativo
 
-👉 https://drive.google.com/drive/folders/1lNbN2SH72LdO3lS3BNX8577cyscYWaCM?usp=sharing
+👉 https://drive.google.com/file/d/1HXZBbt4FT7m5H19oqVVRVG3GcOPr-BIV/view?usp=sharing
 
 ---
 
