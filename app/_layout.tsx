@@ -1,22 +1,37 @@
-import { Stack } from 'expo-router';
-import React from 'react';
-import { AuthProvider } from '../context/AuthContext';
+import { AuthProvider, useAuth } from "@/context/AuthContext";
+import { Stack, router } from "expo-router";
+import { useEffect } from "react";
+import { ActivityIndicator, View } from "react-native";
 
-export default function RootLayout() {
+function Guard() {
+  const { token, loading } = useAuth();
+
+  useEffect(() => {
+    if (!loading) {
+      router.replace(token ? "/(tabs)/home" : "/");
+    }
+  }, [token, loading]);
+
+  if (loading) {
+    return (
+      <View style={{ flex: 1, justifyContent: "center" }}>
+        <ActivityIndicator />
+      </View>
+    );
+  }
+
+  return (
+    <Stack screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="index" />
+      <Stack.Screen name="(tabs)" />
+    </Stack>
+  );
+}
+
+export default function Layout() {
   return (
     <AuthProvider>
-      <Stack>
-        {/* Pantalla de Login (inicial) */}
-        <Stack.Screen
-          name="index"
-          options={{ title: 'Login' }}
-        />
-        {/* Grupo de tabs (Home, Todos, Perfil) */}
-        <Stack.Screen
-          name="(tabs)"
-          options={{ headerShown: false }}
-        />
-      </Stack>
+      <Guard />
     </AuthProvider>
   );
 }
