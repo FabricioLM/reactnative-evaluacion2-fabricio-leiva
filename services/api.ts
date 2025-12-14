@@ -50,6 +50,13 @@ export async function apiLogin(email: string, password: string) {
 
 /* ================= TODOS ================= */
 
+/* ================= TODOS ================= */
+
+type ApiResponse<T> = {
+  success: boolean;
+  data: T;
+};
+
 export type ApiTodo = {
   id: number;
   title: string;
@@ -58,25 +65,32 @@ export type ApiTodo = {
   longitude?: number;
 };
 
-export async function apiGetTodos() {
-  return request<ApiTodo[]>("/todos", "GET");
+export async function apiGetTodos(): Promise<ApiTodo[]> {
+  const res = await request<ApiResponse<ApiTodo[]>>("/todos", "GET");
+  return res.data;
 }
 
 export async function apiCreateTodo(payload: {
   title: string;
   latitude?: number;
   longitude?: number;
-}) {
-  return request<ApiTodo>("/todos", "POST", payload);
+}): Promise<ApiTodo> {
+  const res = await request<ApiResponse<ApiTodo>>("/todos", "POST", payload);
+  return res.data;
 }
 
 export async function apiUpdateTodo(
   id: number,
   payload: Partial<{ title: string; completed: boolean }>
-) {
-  return request<ApiTodo>(`/todos/${id}`, "PATCH", payload);
+): Promise<ApiTodo> {
+  const res = await request<ApiResponse<ApiTodo>>(
+    `/todos/${id}`,
+    "PATCH",
+    payload
+  );
+  return res.data;
 }
 
-export async function apiDeleteTodo(id: number) {
-  return request(`/todos/${id}`, "DELETE");
+export async function apiDeleteTodo(id: number): Promise<void> {
+  await request<ApiResponse<unknown>>(`/todos/${id}`, "DELETE");
 }
